@@ -1399,8 +1399,6 @@
 
          spawned.on('close', result.resolve);
 
-         spawned.on('exit', result.resolve);
-
          result.promise.then(function (exitCode) {
             function done (output) {
                then.call(git, null, output);
